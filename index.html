@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f4f6ef" />
+  <title>Dookoła Koła — Koło Naukowe</title>
+  <meta name="description" content="Wydarzenia, pomysły i projekty studenckiego koła naukowego Dookoła Koła." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#start" aria-label="Dookoła Koła — strona główna">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span>Dookoła Koła</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Otwórz menu">
+        <span></span><span></span>
+      </button>
+      <nav class="nav" id="main-nav" aria-label="Główna nawigacja">
+        <a class="active" href="#start">Start</a>
+        <a href="#kalendarz">Kalendarz</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#blog">Blog</a>
+      </nav>
+      <a class="nav-cta" href="#skrzynka">Napisz do nas <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero shell" id="start">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Koło naukowe · Uniwersytet</p>
+        <h1>Zbieramy pomysły.<br /><em>Robimy rzeczy.</em></h1>
+        <p class="hero-lead">Miejsce dla ciekawych ludzi, którzy chcą rozwijać pasje, poznawać nowych ludzi i działać razem.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#kalendarz">Zobacz wydarzenia <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#skrzynka">Masz pomysł? <strong>Daj znać</strong></a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Aktywni członkowie koła naukowego">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="hero-card hero-card-main">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=85" alt="Studenci pracujący razem przy stole" />
+        </div>
+        <div class="hero-card hero-card-small">
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=500&q=85" alt="Członkowie koła podczas spotkania" />
+        </div>
+        <div class="hero-sticker"><span>●</span> społeczność w ruchu</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Najbliższe wydarzenie">
+      <div class="shell ticker-inner">
+        <p><span class="pulse"></span><strong>Następne spotkanie</strong></p>
+        <p>Warsztaty UX Research <span class="dot-separator">•</span> <strong>12 grudnia, 18:00</strong></p>
+        <a href="#kalendarz">Do kalendarza <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="section shell" id="kalendarz">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> Plan na najbliższy czas</p>
+          <h2>Kalendarz wydarzeń</h2>
+        </div>
+        <a class="text-link desktop-only" href="#"><strong>Eksportuj do kalendarza</strong> <span>↗</span></a>
+      </div>
+
+      <div class="calendar-layout">
+        <article class="calendar-card">
+          <div class="calendar-toolbar">
+            <button class="icon-button" id="prevMonth" type="button" aria-label="Poprzedni miesiąc">←</button>
+            <h3 id="calendarTitle">Grudzień 2026</h3>
+            <button class="icon-button" id="nextMonth" type="button" aria-label="Następny miesiąc">→</button>
+          </div>
+          <div class="weekdays" aria-hidden="true">
+            <span>Pn</span><span>Wt</span><span>Śr</span><span>Cz</span><span>Pt</span><span>So</span><span>Nd</span>
+          </div>
+          <div class="calendar-grid" id="calendarGrid" role="grid" aria-label="Kalendarz miesięczny"></div>
+        </article>
+
+        <aside class="events-list" id="eventsList">
+          <p class="list-label">Nadchodzące</p>
+          <article class="event-item featured" data-date="2026-12-12">
+            <time datetime="2026-12-12"><strong>12</strong><span>GRU</span></time>
+            <div><p>Warsztat</p><h3>Warsztaty UX Research</h3><span>18:00 · sala 302</span></div>
+            <button type="button" class="event-arrow" aria-label="Zobacz Warsztaty UX Research">↗</button>
+          </article>
+          <article class="event-item" data-date="2026-12-17">
+            <time datetime="2026-12-17"><strong>17</strong><span>GRU</span></time>
+            <div><p>Spotkanie</p><h3>Burza mózgów projektowych</h3><span>17:30 · campus lab</span></div>
+            <button type="button" class="event-arrow" aria-label="Zobacz Burzę mózgów">↗</button>
+          </article>
+          <article class="event-item" data-date="2027-01-09">
+            <time datetime="2027-01-09"><strong>09</strong><span>STY</span></time>
+            <div><p>Konferencja</p><h3>Open Science Friday</h3><span>10:00 · aula główna</span></div>
+            <button type="button" class="event-arrow" aria-label="Zobacz Open Science Friday">↗</button>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> Z życia koła</p>
+            <h2>Galeria</h2>
+          </div>
+          <div class="gallery-filters" aria-label="Filtry galerii">
+            <button class="active" type="button" data-filter="all">Wszystko</button>
+            <button type="button" data-filter="workshops">Warsztaty</button>
+            <button type="button" data-filter="meetings">Spotkania</button>
+          </div>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-item gallery-tall" type="button" data-category="workshops" data-caption="Warsztaty projektowe">
+            <img src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&fit=crop&w=900&q=85" alt="Warsztat projektowy" />
+            <span>Warsztaty projektowe <small>18 zdjęć</small></span>
+          </button>
+          <button class="gallery-item" type="button" data-category="meetings" data-caption="Spotkanie integracyjne">
+            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=700&q=85" alt="Spotkanie integracyjne grupy" />
+            <span>Integracja <small>12 zdjęć</small></span>
+          </button>
+          <button class="gallery-item" type="button" data-category="workshops" data-caption="Dzień badań">
+            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=700&q=85" alt="Zespół podczas warsztatów" />
+            <span>Dzień badań <small>24 zdjęcia</small></span>
+          </button>
+          <button class="gallery-item gallery-wide" type="button" data-category="meetings" data-caption="Forum społeczne">
+            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=900&q=85" alt="Wydarzenie na uczelni" />
+            <span>Forum społeczne <small>9 zdjęć</small></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="blog">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> Opowieści i notatki</p>
+          <h2>Z naszego bloga</h2>
+        </div>
+        <a class="text-link" href="#"><strong>Wszystkie wpisy</strong> <span>→</span></a>
+      </div>
+      <div class="blog-grid">
+        <article class="post-card post-featured">
+          <a href="#" class="post-image" aria-label="Czytaj wpis: Jak zacząć badania">
+            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85" alt="Zespół prowadzący burzę mózgów" />
+          </a>
+          <div class="post-content">
+            <p class="post-meta">Metodologia <span>·</span> 8 min czytania</p>
+            <h3><a href="#">Jak zacząć badania, kiedy nie wiesz, od czego zacząć?</a></h3>
+            <p>Praktyczny przewodnik po pierwszym pytaniu badawczym i sposobach na dobre przygotowanie projektu.</p>
+            <a class="post-link" href="#">Czytaj wpis <span>→</span></a>
+          </div>
+        </article>
+        <div class="post-list">
+          <article class="post-row">
+            <time datetime="2026-11-18"><strong>18</strong><span>LIST</span></time>
+            <div><p>Relacja</p><h3><a href="#">Open Science Friday: czego nauczyliśmy się od siebie?</a></h3></div>
+            <a href="#" aria-label="Czytaj wpis">↗</a>
+          </article>
+          <article class="post-row">
+            <time datetime="2026-11-04"><strong>04</strong><span>LIST</span></time>
+            <div><p>Poradnik</p><h3><a href="#">5 trików na prowadzenie angażującego warsztatu</a></h3></div>
+            <a href="#" aria-label="Czytaj wpis">↗</a>
+          </article>
+          <article class="post-row">
+            <time datetime="2026-10-27"><strong>27</strong><span>PAŹ</span></time>
+            <div><p>Historie członków</p><h3><a href="#">Mój pierwszy projekt w kole naukowym</a></h3></div>
+            <a href="#" aria-label="Czytaj wpis">↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="suggestion-wrap" id="skrzynka">
+      <div class="shell suggestion">
+        <div class="suggestion-copy">
+          <p class="eyebrow light"><span></span> Skrzynka skarg i pomysłów</p>
+          <h2>Masz pomysł na coś nowego?</h2>
+          <p>Podziel się nim anonimowo. Każdy głos może być początkiem kolejnego projektu.</p>
+        </div>
+        <form class="suggestion-form" id="suggestionForm">
+          <label for="suggestionText">Twoja wiadomość</label>
+          <textarea id="suggestionText" name="message" rows="4" required placeholder="Napisz, co możemy zrobić lepiej lub co warto zorganizować..."></textarea>
+          <div class="form-bottom">
+            <label class="checkbox"><input type="checkbox" id="anonymous" checked /><span></span> Wyślij anonimowo</label>
+            <button class="button button-light" type="submit">Wyślij pomysł <span>→</span></button>
+          </div>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <a class="brand footer-brand" href="#start"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Dookoła Koła</span></a>
+      <p>© 2026 Dookoła Koła</p>
+      <div class="socials"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="Facebook">fb</a><a href="#" aria-label="LinkedIn">in</a></div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
+    <button type="button" id="closeLightbox" aria-label="Zamknij">×</button>
+    <img id="lightboxImage" src="" alt="" />
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
