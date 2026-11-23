@@ -1,0 +1,42 @@
+<section class="section shell" id="kalendarz">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow"><span></span> Plan na najbliższy czas</p>
+      <h2>Kalendarz wydarzeń</h2>
+    </div>
+    <a class="text-link desktop-only" href="#"><strong>Eksportuj do kalendarza</strong> <span>↗</span></a>
+  </div>
+
+  <div class="calendar-layout">
+    <article class="calendar-card">
+      <div class="calendar-toolbar">
+        <button class="icon-button" id="prevMonth" type="button" aria-label="Poprzedni miesiąc">←</button>
+        <h3 id="calendarTitle">Grudzień 2026</h3>
+        <button class="icon-button" id="nextMonth" type="button" aria-label="Następny miesiąc">→</button>
+      </div>
+      <div class="weekdays" aria-hidden="true">
+        <span>Pn</span><span>Wt</span><span>Śr</span><span>Cz</span><span>Pt</span><span>So</span><span>Nd</span>
+      </div>
+      <div class="calendar-grid" id="calendarGrid" role="grid" aria-label="Kalendarz miesięczny"></div>
+    </article>
+
+    <aside class="events-list" id="eventsList">
+      <p class="list-label">Nadchodzące</p>
+      <article class="event-item featured" data-date="2026-12-12">
+        <time datetime="2026-12-12"><strong>12</strong><span>GRU</span></time>
+        <div><p>Warsztat</p><h3>Warsztaty UX Research</h3><span>18:00 · sala 302</span></div>
+        <button type="button" class="event-arrow" aria-label="Zobacz Warsztaty UX Research">↗</button>
+      </article>
+      <article class="event-item" data-date="2026-12-17">
+        <time datetime="2026-12-17"><strong>17</strong><span>GRU</span></time>
+        <div><p>Spotkanie</p><h3>Burza mózgów projektowych</h3><span>17:30 · campus lab</span></div>
+        <button type="button" class="event-arrow" aria-label="Zobacz Burzę mózgów">↗</button>
+      </article>
+      <article class="event-item" data-date="2027-01-09">
+        <time datetime="2027-01-09"><strong>09</strong><span>STY</span></time>
+        <div><p>Konferencja</p><h3>Open Science Friday</h3><span>10:00 · aula główna</span></div>
+        <button type="button" class="event-arrow" aria-label="Zobacz Open Science Friday">↗</button>
+      </article>
+    </aside>
+  </div>
+</section>

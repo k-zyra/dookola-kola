@@ -1,0 +1,95 @@
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 42px;
+}
+.post-featured {
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: 44% 56%;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+.post-image {
+  overflow: hidden;
+}
+.post-image img {
+  transition: 0.4s;
+}
+.post-featured:hover .post-image img {
+  transform: scale(1.03);
+}
+.post-content {
+  padding: 30px;
+}
+.post-meta {
+  color: var(--green);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.post-meta span {
+  margin: 0 5px;
+}
+.post-content h3 {
+  font-family: "Manrope";
+  font-size: 23px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.post-content > p:not(.post-meta) {
+  color: #747b74;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.post-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 800;
+}
+.post-link span {
+  margin-left: 12px;
+}
+.post-list {
+  border-top: 1px solid var(--line);
+}
+.post-row {
+  min-height: 100px;
+  display: grid;
+  grid-template-columns: 58px 1fr 32px;
+  align-items: center;
+  gap: 14px;
+  border-bottom: 1px solid var(--line);
+}
+.post-row time {
+  display: flex;
+  flex-direction: column;
+}
+.post-row time strong {
+  font-family: "Manrope";
+  font-size: 22px;
+}
+.post-row time span {
+  font-size: 8px;
+}
+.post-row div > p {
+  margin: 0 0 5px;
+  color: var(--green);
+  font-size: 9px;
+  text-transform: uppercase;
+}
+.post-row h3 {
+  margin: 0;
+  font-size: 14px;
+}
+.post-row > a {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  font-size: 12px;
+}

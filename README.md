@@ -1,12 +1,22 @@
 # Dookoła Koła
 
-Responsywna strona studenckiego koła naukowego z kalendarzem wydarzeń, skrzynką skarg i pomysłów, galerią oraz mini blogiem.
+A responsive website for a university student science club, featuring an events calendar, a complaints and ideas inbox, a gallery, and a mini blog.
+
+## Local development
+
+Run the modular Node.js server from the project root:
+
+```sh
+node server/start.js 5500
+```
+
+Then open `http://127.0.0.1:5500`.
 
 ## GitHub Pages
 
-1. Zatwierdź i wypchnij pliki do gałęzi `main`.
-2. W ustawieniach repozytorium wybierz **Settings → Pages**.
-3. W sekcji **Build and deployment** ustaw źródło na **Deploy from a branch**.
-4. Wybierz gałąź `main` i folder `/ (root)`.
+1. Commit and push the files to the `main` branch.
+2. In the repository settings, select **Settings → Pages**.
+3. In the **Build and deployment** section, set the source to **Deploy from a branch**.
+4. Select the `main` branch and the `/ (root)` folder.
 
-Strona jest statyczna i nie wymaga procesu budowania ani dodatkowych zależności.
+The website is static and does not require a build process or additional dependencies.
